@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Main\\Desktop\\Algorithm\\Program\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A76B6C63-607A-4D31-B97B-7A0399FC273F}|..\\Class2th (Brute Force)\\Class2th (Brute Force).vcxproj|C:\\Users\\Main\\Desktop\\Algorithm\\Class2th (Brute Force)\\Class2th (Brute Force).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9422AAE4-B83E-458F-B521-3C47EF4B6F46}|..\\Class1th (Asymptotic Notation)\\Class1th (Asymptotic Notation).vcxproj|C:\\Users\\Main\\Desktop\\Algorithm\\Class1th (Asymptotic Notation)\\Class1th (Asymptotic Notation).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BF31ECA-CA44-4BA7-8B55-EC711078C606}|Program.vcxproj|C:\\Users\\Main\\Desktop\\Algorithm\\Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5BF31ECA-CA44-4BA7-8B55-EC711078C606}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class2th (Brute Force).cpp",
+              "DocumentMoniker": "C:\\Users\\Main\\Desktop\\Algorithm\\Class2th (Brute Force)\\Class2th (Brute Force).cpp",
+              "RelativeDocumentMoniker": "..\\Class2th (Brute Force)\\Class2th (Brute Force).cpp",
+              "ToolTip": "C:\\Users\\Main\\Desktop\\Algorithm\\Class2th (Brute Force)\\Class2th (Brute Force).cpp",
+              "RelativeToolTip": "..\\Class2th (Brute Force)\\Class2th (Brute Force).cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-12T12:43:01.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1th (Asymptotic Notation).cpp",
+              "DocumentMoniker": "C:\\Users\\Main\\Desktop\\Algorithm\\Class1th (Asymptotic Notation)\\Class1th (Asymptotic Notation).cpp",
+              "RelativeDocumentMoniker": "..\\Class1th (Asymptotic Notation)\\Class1th (Asymptotic Notation).cpp",
+              "ToolTip": "C:\\Users\\Main\\Desktop\\Algorithm\\Class1th (Asymptotic Notation)\\Class1th (Asymptotic Notation).cpp",
+              "RelativeToolTip": "..\\Class1th (Asymptotic Notation)\\Class1th (Asymptotic Notation).cpp",
+              "ViewState": "AgIAADMAAAAAAAAAAAAqwFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-12T12:41:58.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cpp",
+              "DocumentMoniker": "C:\\Users\\Main\\Desktop\\Algorithm\\Program\\Program.cpp",
+              "RelativeDocumentMoniker": "Program.cpp",
+              "ToolTip": "C:\\Users\\Main\\Desktop\\Algorithm\\Program\\Program.cpp",
+              "RelativeToolTip": "Program.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-12T11:12:03.924Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
