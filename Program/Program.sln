@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class3th (Bubble Sort)", ".
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class4th (Select Sort)", "..\Class4th (Select Sort)\Class4th (Select Sort).vcxproj", "{42FD8B2F-A235-4464-BDB9-0CA22918C8B2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class5th (Insert Sort)", "..\Class5th (Insert Sort)\Class5th (Insert Sort).vcxproj", "{CF2FE1D3-0E00-4EC9-BBBB-8C7EC759B81D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{42FD8B2F-A235-4464-BDB9-0CA22918C8B2}.Release|x64.Build.0 = Release|x64
 		{42FD8B2F-A235-4464-BDB9-0CA22918C8B2}.Release|x86.ActiveCfg = Release|Win32
 		{42FD8B2F-A235-4464-BDB9-0CA22918C8B2}.Release|x86.Build.0 = Release|Win32
+		{CF2FE1D3-0E00-4EC9-BBBB-8C7EC759B81D}.Debug|x64.ActiveCfg = Debug|x64
+		{CF2FE1D3-0E00-4EC9-BBBB-8C7EC759B81D}.Debug|x64.Build.0 = Debug|x64
+		{CF2FE1D3-0E00-4EC9-BBBB-8C7EC759B81D}.Debug|x86.ActiveCfg = Debug|Win32
+		{CF2FE1D3-0E00-4EC9-BBBB-8C7EC759B81D}.Debug|x86.Build.0 = Debug|Win32
+		{CF2FE1D3-0E00-4EC9-BBBB-8C7EC759B81D}.Release|x64.ActiveCfg = Release|x64
+		{CF2FE1D3-0E00-4EC9-BBBB-8C7EC759B81D}.Release|x64.Build.0 = Release|x64
+		{CF2FE1D3-0E00-4EC9-BBBB-8C7EC759B81D}.Release|x86.ActiveCfg = Release|Win32
+		{CF2FE1D3-0E00-4EC9-BBBB-8C7EC759B81D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
