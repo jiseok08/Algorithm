@@ -2,53 +2,60 @@
 
 using namespace std;
 
-// 1. 두 개의 자연수 x, y가 있을 때
-//    x와 y를 나눈 나머지를 r이라고 합니다.
-
-// 2. r이 0이라면, x와 y의 최대공약수는 y가 됩니다.
-
-// 3. r이 0이 아니라면, x와 y의 최대공약수는 y와 r의
-//    최대 공약수와 같기 때문에 x에는 y 그리고 y에는
-//    r을 대입한 후 1번으로 돌아갑니다.
-
-int Euclid(int x, int y)
+void sieve(int n)
 {
-    int r = x % y;
-
-    if (r == 0)
+    int* list = new int[n];
+    
+    for (int i = 0; i <= n; i++)
     {
-        return y;
+        list[i] = i;
     }
-    else
+
+    delete[0] list;
+    delete[1] list;
+
+    for (int i = 2; i <= n; i++)
     {
-        Euclid(y, r);
+        if (list[i] != 2 && list[i] % 2 == 0)
+        {
+            list[i] = 0;
+        }
+        if (list[i] != 3 && list[i] % 3 == 0)
+        {
+            list[i] = 0;
+        }
     }
 }
 
 int main()
 {
-#pragma region 유클리드 호제법
-    // 2개의 자연수 또는 정식의 최대 공약수를 구하는 방식으로
-    // 두 수가 서로 상대방 수를 나누어서 원하는 수를 얻어내는 알고리즘입니다.
+#pragma region 에라토스테네스의 체
+    
+    int j = 0;
+    int n = 0;
 
-    int x = 24;
-    int y = 36;
+    std::cin >> n;
 
-    int result = 0;
-
-    for (int i = 1; i <= x && i <= y; i++)
+    for (int i = 2; i <= n; i++)
     {
-        if (x % i == 0 && y % i == 0)
+        for (j = 2; j < n; j++)
         {
-            result = i;
+            if (i % j == 0)
+            {
+                break;
+            }
+        }
+
+        if (i == j)
+        {
+            cout << i << " ";
         }
     }
 
-    cout << "최대공약수 : " << result << endl;
-
-    cout << "유클리드 : " << Euclid(x, y) << endl;
-
 #pragma endregion
+
+
+
 
     return 0;
 }
