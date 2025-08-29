@@ -1,6 +1,65 @@
 ﻿#include <iostream>
+#include <vector>
+#include <queue>
+#include <unordered_set>
+#include <unordered_map>
 
 using namespace std;
+
+template <typename T>
+class Graph
+{
+private:
+    unordered_set<T> vertices;
+    unordered_map<T, int> degree;
+    unordered_map<T, vector<T>> adjacencyList;
+public:
+    void insert(const T& i, const T& j)
+    {
+        adjacencyList[i].push_back(j); 
+
+        degree[j]++;
+
+        vertices.insert(i);
+        vertices.insert(j);
+
+        if (degree.count(i) == false)
+        {
+            degree[i] = 0;
+        }
+    }
+
+    void sort(const T& start)
+    {
+        queue<T> queue;
+
+        queue.push(start);
+
+        if (degree[queue.front()] <= 0)
+        {
+            cout << queue.front() << " "; 
+        }
+
+        while (queue.empty() == false)
+        {
+            T x = queue.front();
+
+            queue.pop();
+
+            for (const T& element : adjacencyList[x])
+            {
+                degree[element]--;
+
+                if (degree[element] <= 0)
+                {
+                    queue.push(element);
+
+                    cout << element << " ";
+                }
+            }
+        }
+    }
+};
 
 int main()
 {
@@ -22,8 +81,24 @@ int main()
 
     // 4. Queue가 비어있을 때까지 2번 ~ 3번 작업을 반복적으로 수행합니다.
 
-#pragma endregion
+    Graph<int> graph;
 
+    graph.insert(1, 2);
+    graph.insert(1, 5);
+
+    graph.insert(2, 3);
+
+    graph.insert(3, 4);
+
+    graph.insert(4, 6);
+
+    graph.insert(5, 6);
+
+    graph.insert(6, 7);
+
+    graph.search(1);
+
+#pragma endregion
 
     return 0;
 }
