@@ -1,2 +1,307 @@
 ﻿  Program.cpp
-  Program.vcxproj -> C:\Users\Main\Desktop\Algorithm\Program\x64\Debug\Program.exe
+C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(6,9): warning C4005: 'INFINITY': 매크로 재정의
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9):
+      'INFINITY'의 이전 정의를 참조하십시오.
+  
+C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,37): error C2679: 이항 '=': 오른쪽 피연산자로 'int' 형식을 사용하는 연산자가 없거나 허용되는 변환이 없습니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(1529,26):
+      'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(std::initializer_list<_Ty>)'일 수 있습니다.
+          with
+          [
+              _Ty=int
+          ]
+          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,37):
+          'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(std::initializer_list<_Ty>)': 인수 2을(를) 'int'에서 'std::initializer_list<_Ty>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+              C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,41):
+              'std::initializer_list<_Ty>::initializer_list': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\initializer_list(51,1):
+                  'std::initializer_list<_Ty>::initializer_list(std::initializer_list<_Ty> &&)'일 수 있습니다.
+          with
+          [
+              _Ty=int
+          ]
+                      C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,41):
+                      'std::initializer_list<_Ty>::initializer_list(std::initializer_list<_Ty> &&)': 인수 1을(를) 'int'에서 'std::initializer_list<_Ty> &&'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+                          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,41):
+                          원인: 'int'에서 'std::initializer_list<_Ty>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+                          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,41):
+                          변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\initializer_list(51,1):
+                  또는       'std::initializer_list<_Ty>::initializer_list(const std::initializer_list<_Ty> &)'
+          with
+          [
+              _Ty=int
+          ]
+                      C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,41):
+                      'std::initializer_list<_Ty>::initializer_list(const std::initializer_list<_Ty> &)': 인수 1을(를) 'int'에서 'const std::initializer_list<_Ty> &'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+                          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,41):
+                          원인: 'int'에서 'const std::initializer_list<_Ty>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+                          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,41):
+                          변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+                  C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,41):
+                  인수 목록 '(int)'을(를) 일치시키는 동안
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(1508,26):
+      또는       'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(const std::vector<int,std::allocator<int>> &)'
+          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,37):
+          'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(const std::vector<int,std::allocator<int>> &)': 인수 2을(를) 'int'에서 'const std::vector<int,std::allocator<int>> &'(으)로 변환할 수 없습니다.
+              C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,41):
+              원인: 'int'에서 'const std::vector<int,std::allocator<int>>'(으)로 변환할 수 없습니다.
+              C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,41):
+              class 'std::vector<int,std::allocator<int>>'의 생성자가 'explicit'으로 선언되었습니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(783,26):
+      또는       'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(std::vector<int,std::allocator<int>> &&) noexcept(<expr>)'
+          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,37):
+          'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(std::vector<int,std::allocator<int>> &&) noexcept(<expr>)': 인수 2을(를) 'int'에서 'std::vector<int,std::allocator<int>> &&'(으)로 변환할 수 없습니다.
+              C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,41):
+              원인: 'int'에서 'std::vector<int,std::allocator<int>>'(으)로 변환할 수 없습니다.
+              C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,41):
+              class 'std::vector<int,std::allocator<int>>'의 생성자가 'explicit'으로 선언되었습니다.
+      C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,37):
+      인수 목록 '(_Ty, int)'을(를) 일치시키는 동안
+          with
+          [
+              _Ty=std::vector<int,std::allocator<int>>
+          ]
+      C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(37,37):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(86,19):
+          컴파일되는 클래스 템플릿 인스턴스화 'Dijkstra<int>'에 대한 참조를 확인하세요.
+          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(23,10):
+          클래스 템플릿 멤버 함수 'void Dijkstra<int>::resize(int)'을(를) 컴파일하는 중입니다.
+              C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(20,15):
+              'Dijkstra<int>::Dijkstra'에서 'Dijkstra<int>::resize'에 대한 첫 번째 참조를 확인하세요.
+              C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(86,19):
+              'main'에서 'Dijkstra<int>::Dijkstra'에 대한 첫 번째 참조를 확인하세요.
+  
+C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,37): error C2679: 이항 '=': 오른쪽 피연산자로 '_Ty' 형식을 사용하는 연산자가 없거나 허용되는 변환이 없습니다.
+C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,37): error C2679:         with
+C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,37): error C2679:         [
+C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,37): error C2679:             _Ty=int
+C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,37): error C2679:         ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(1529,26):
+      'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(std::initializer_list<_Ty>)'일 수 있습니다.
+          with
+          [
+              _Ty=int
+          ]
+          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,37):
+          'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(std::initializer_list<_Ty>)': 인수 2을(를) '_Ty'에서 'std::initializer_list<_Ty>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+              C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,59):
+              'std::initializer_list<_Ty>::initializer_list': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\initializer_list(51,1):
+                  'std::initializer_list<_Ty>::initializer_list(std::initializer_list<_Ty> &&)'일 수 있습니다.
+          with
+          [
+              _Ty=int
+          ]
+                      C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,59):
+                      'std::initializer_list<_Ty>::initializer_list(std::initializer_list<_Ty> &&)': 인수 1을(를) '_Ty'에서 'std::initializer_list<_Ty> &&'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+                          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,59):
+                          원인: '_Ty'에서 'std::initializer_list<_Ty>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+                          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,59):
+                          변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\initializer_list(51,1):
+                  또는       'std::initializer_list<_Ty>::initializer_list(const std::initializer_list<_Ty> &)'
+          with
+          [
+              _Ty=int
+          ]
+                      C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,59):
+                      'std::initializer_list<_Ty>::initializer_list(const std::initializer_list<_Ty> &)': 인수 1을(를) '_Ty'에서 'const std::initializer_list<_Ty> &'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+                          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,59):
+                          원인: '_Ty'에서 'const std::initializer_list<_Ty>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+                          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,59):
+                          변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+                  C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,59):
+                  인수 목록 '(_Ty)'을(를) 일치시키는 동안
+          with
+          [
+              _Ty=int
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(1508,26):
+      또는       'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(const std::vector<int,std::allocator<int>> &)'
+          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,37):
+          'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(const std::vector<int,std::allocator<int>> &)': 인수 2을(를) '_Ty'에서 'const std::vector<int,std::allocator<int>> &'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+              C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,59):
+              원인: '_Ty'에서 'const std::vector<int,std::allocator<int>>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+              C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,59):
+              class 'std::vector<int,std::allocator<int>>'의 생성자가 'explicit'으로 선언되었습니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(783,26):
+      또는       'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(std::vector<int,std::allocator<int>> &&) noexcept(<expr>)'
+          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,37):
+          'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(std::vector<int,std::allocator<int>> &&) noexcept(<expr>)': 인수 2을(를) '_Ty'에서 'std::vector<int,std::allocator<int>> &&'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+              C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,59):
+              원인: '_Ty'에서 'std::vector<int,std::allocator<int>>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+              C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,59):
+              class 'std::vector<int,std::allocator<int>>'의 생성자가 'explicit'으로 선언되었습니다.
+      C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(41,37):
+      인수 목록 '(_Ty, _Ty)'을(를) 일치시키는 동안
+          with
+          [
+              _Ty=std::vector<int,std::allocator<int>>
+          ]
+          and
+          [
+              _Ty=int
+          ]
+  
+C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(45,37): error C2679: 이항 '=': 오른쪽 피연산자로 'int' 형식을 사용하는 연산자가 없거나 허용되는 변환이 없습니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(1529,26):
+      'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(std::initializer_list<_Ty>)'일 수 있습니다.
+          with
+          [
+              _Ty=int
+          ]
+          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(45,37):
+          'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(std::initializer_list<_Ty>)': 인수 2을(를) 'int'에서 'std::initializer_list<_Ty>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+              C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(45,41):
+              'std::initializer_list<_Ty>::initializer_list': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\initializer_list(51,1):
+                  'std::initializer_list<_Ty>::initializer_list(std::initializer_list<_Ty> &&)'일 수 있습니다.
+          with
+          [
+              _Ty=int
+          ]
+                      C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(45,41):
+                      'std::initializer_list<_Ty>::initializer_list(std::initializer_list<_Ty> &&)': 인수 1을(를) 'int'에서 'std::initializer_list<_Ty> &&'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+                          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(45,41):
+                          원인: 'int'에서 'std::initializer_list<_Ty>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+                          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(45,41):
+                          변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\initializer_list(51,1):
+                  또는       'std::initializer_list<_Ty>::initializer_list(const std::initializer_list<_Ty> &)'
+          with
+          [
+              _Ty=int
+          ]
+                      C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(45,41):
+                      'std::initializer_list<_Ty>::initializer_list(const std::initializer_list<_Ty> &)': 인수 1을(를) 'int'에서 'const std::initializer_list<_Ty> &'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+                          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(45,41):
+                          원인: 'int'에서 'const std::initializer_list<_Ty>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Ty=int
+          ]
+                          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(45,41):
+                          변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+                  C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(45,41):
+                  인수 목록 '(int)'을(를) 일치시키는 동안
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(1508,26):
+      또는       'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(const std::vector<int,std::allocator<int>> &)'
+          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(45,37):
+          'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(const std::vector<int,std::allocator<int>> &)': 인수 2을(를) 'int'에서 'const std::vector<int,std::allocator<int>> &'(으)로 변환할 수 없습니다.
+              C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(45,41):
+              원인: 'int'에서 'const std::vector<int,std::allocator<int>>'(으)로 변환할 수 없습니다.
+              C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(45,41):
+              class 'std::vector<int,std::allocator<int>>'의 생성자가 'explicit'으로 선언되었습니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(783,26):
+      또는       'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(std::vector<int,std::allocator<int>> &&) noexcept(<expr>)'
+          C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(45,37):
+          'std::vector<int,std::allocator<int>> &std::vector<int,std::allocator<int>>::operator =(std::vector<int,std::allocator<int>> &&) noexcept(<expr>)': 인수 2을(를) 'int'에서 'std::vector<int,std::allocator<int>> &&'(으)로 변환할 수 없습니다.
+              C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(45,41):
+              원인: 'int'에서 'std::vector<int,std::allocator<int>>'(으)로 변환할 수 없습니다.
+              C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(45,41):
+              class 'std::vector<int,std::allocator<int>>'의 생성자가 'explicit'으로 선언되었습니다.
+      C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(45,37):
+      인수 목록 '(_Ty, int)'을(를) 일치시키는 동안
+          with
+          [
+              _Ty=std::vector<int,std::allocator<int>>
+          ]
+  
+C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(48,55): error C2440: '=': '_Ty'에서 '_Ty'(으)로 변환할 수 없습니다.
+C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(48,55): error C2440:         with
+C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(48,55): error C2440:         [
+C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(48,55): error C2440:             _Ty=std::vector<int,std::allocator<int>>
+C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(48,55): error C2440:         ]
+C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(48,55): error C2440:         and
+C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(48,55): error C2440:         [
+C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(48,55): error C2440:             _Ty=int
+C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(48,55): error C2440:         ]
+      C:\Users\Main\Desktop\Algorithm\Program\Program.cpp(48,55):
+      이 변환을 수행할 수 있는 사용 가능한 사용자 정의 변환 연산자가 없거나 연산자를 호출할 수 없습니다.
+  
