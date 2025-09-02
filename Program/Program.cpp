@@ -5,61 +5,103 @@ using namespace std;
 
 #define INFINITY 10000000
 
-template <typename T>
 class Dijkstra
 {
 private:
-    vector<vector<T>> adjacencyList;
-    vector<T> distance;
-    vector<int> visited;
+    vector<int> distance;
+    vector<bool> visited;
+    vector<vector<int>> graph;
 
-    int size = 0;
 public:
-    Dijkstra()
-    {
-        resize(1);
-    }
-
-    void resize(int node)
+    void Resize(int node)
     {
         int newSize = node + 1;
 
-        if (size < newSize)
+        if (graph.size() < newSize)
         {
-            vector<vector<T>> * newList = new vector<vector<T>>;
+            int previousSize = graph.size();
 
-            for (int i = 0; i < newSize; i++)
+            graph.resize(newSize);
+
+            for (int i = previousSize; i < newSize; i++)
             {
-                for (int j = 0; j < newSize; j++)
-                {
-                    if (i == j)
-                    {
-                        newList[i][j] = 0;
-                    }
-                    else if (adjacencyList[i][j] != INFINITY)
-                    {
-                        newList[i][j] = adjacencyList[i][j];
-                    }
-                    else
-                    {
-                        newList[i][j] = INFINITY;
-                    }
+                graph[i].resize(newSize, INFINITY);
+            }
 
-                    adjacencyList[i][j] = newList[i][j];
-                }
+            for (int i = 0; i < previousSize; i++)
+            {
+                graph[i].resize(newSize, INFINITY);
+            }
+
+            for (int i = previousSize; i < newSize; i++)
+            {
+                graph[i][i] = 0;
             }
         }
 
-        size = newSize;
+        if (visited.size() < newSize)
+        {
+            visited.resize(newSize, false);
+            distance.resize(newSize, INFINITY);
+        }
     }
 
     void insert(int i, int j, int weigth)
     {
+        Resize(max(i, j));
 
+        graph[i][j] = weigth;
+        graph[j][i] = weigth;
+    }
 
-        adjacencyList[i].push_back(j);
-        adjacencyList[j].push_back(i);
+    const int & find()
+    {
+        int index = 0;
 
+        int min = INFINITY;
+
+        for (int i = 0; i < distance.size();i++)
+        {
+            if (distance[i] < min && visited[i] == false)
+            {
+                min = distance[i];
+
+                index = i;
+            }
+        }
+
+        return index;
+    }
+
+    void update(int start)
+    {
+        for (int i = 0; i < visited.size(); i++)
+        {
+            distance[i] = graph[start][i];
+        }
+
+        visited[start] = true;
+
+        cout << find() << endl;
+    }
+
+    void search()
+    {
+        int weigth = 0;
+
+        visited[0] == true;
+
+        for (int i = 0; i < distance.size(); i++)
+        {
+            weigth += distance[find()];
+
+            if (weigth < distance[find()])
+            {
+
+            }
+
+            visited[find()] = true;
+        }
     }
 };
 
@@ -83,7 +125,24 @@ int main()
     // 방문하지 않은 노드 중에서 가장 작은 거리를 가진 노드를
     // 방문하고, 그 노드와 연결된 다른 노드까지의 거리를 계산합니다.
 
-    Dijkstra<int> dijkstra;
+    Dijkstra dijkstra;
+
+    dijkstra.insert(1, 2, 2);
+    dijkstra.insert(1, 3, 5);
+    dijkstra.insert(1, 4, 1);
+
+    dijkstra.insert(2, 3, 3);
+    dijkstra.insert(2, 4, 2);
+
+    dijkstra.insert(3, 4, 3);
+    dijkstra.insert(3, 5, 1);
+    dijkstra.insert(3, 6, 5);
+
+    dijkstra.insert(4, 5, 1);
+
+    dijkstra.insert(5, 6, 2);
+
+    dijkstra.update(0);
 
 #pragma endregion
 
